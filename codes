@@ -1,4 +1,4 @@
-#Add Two Numbers
+1 #Add Two Numbers
 #Given two numbers num1 and num2. 
 The task is to write a Python program to find the addition of these two numbers.
 
@@ -7,7 +7,7 @@ m=int(input())
 print(m+n)
 
 
-#How much profit?
+2 #How much profit?
 Write a program to print the profit, given cost price and selling price.
 A negative value of profit means loss.
 
@@ -18,7 +18,7 @@ profit = sellPrice-costPrice
 print(profit)
 
 
-#Greater of two numbers.
+3 #Greater of two numbers.
 Write a program to find the greater of two numbers stored in variables.
 
 a = int(input()) 
@@ -26,7 +26,7 @@ b = int(input())
 print(max(a, b)) # if a>b ?a:b
 
 
-#Negative, positive or zero.
+4 #Negative, positive or zero.
 Write a program to check whether a number is negative, positive or zero.
 Print out “negative”, “positive”, or “zero”.
 
@@ -39,7 +39,7 @@ else:
     print("zero")
     
     
- #Yes it is divisible by 5 & 11.
+ 5 #Yes it is divisible by 5 & 11.
 Write a program that prints “YES” if a number is divisible by both 5 and 11, and prints “NO” otherwise.
 
 n=int(input())
@@ -49,7 +49,7 @@ else:
     print("NO")
     
     
-  #Write a program which takes a month (a number) as input and prints the number of days in that month.
+  6 #Write a program which takes a month (a number) as input and prints the number of days in that month.
 For example:
 a. For month=1 print “31 days”
 b. For month=2 print “28 days”
@@ -66,7 +66,7 @@ else:
     print("month does not exist")
     
 
-#Greatest of three numbers.
+7 #Greatest of three numbers.
 Write a program to find the greatest of three numbers stored in variables.
 
 n1=int(input())
@@ -80,7 +80,7 @@ else:
     print(n3)
     
     
-#Can you form a triangle?
+8 #Can you form a triangle?
 Write a program to check if a triangle can be formed using the given lengths of 3 sides.
 For example, if the sides are 10, 24, and 67, then you cannot make a triangle because 10+24
 is not greater than 67.
@@ -95,7 +95,7 @@ else:
     
 
 
-#Type of triangle.
+9 #Type of triangle.
 Write a program to check whether the triangle is an equilateral, isosceles or scalene triangle.
 Equilateral triangle has all 3 sides equal.
 Isosceles triangle has 2 sides equal.
@@ -114,7 +114,7 @@ else:
     
     
     
- #A simple calculator.
+ 10 #A simple calculator.
 Write a program that works as a simple calculator. It reads two integers (A and B) and a character (Ch).
 
 1. If the character is +, the sum is printed. 
@@ -145,7 +145,7 @@ elif c=="%":
     
     
     
-#Is it a leap year?
+11 #Is it a leap year?
 Take as input N, a Year (A number).
 Write a program to check whether N is a leap year or not. If it is, print "YES". Otherwise print "NO".
 
@@ -158,7 +158,7 @@ else:
 
 
 
-#Natural numbers in reverse.
+12 #Natural numbers in reverse.
 Write a program to print all natural numbers in reverse between X and Y inclusive.
 
 x=int(input())
@@ -169,7 +169,7 @@ while y>=x:
     
     
     
-#Multiplication table.
+13 #Multiplication table.
 Write a program to print multiplication table (up to 10) of any number saved in variable X.
 Print the full expression on each line. Ex: “3 * 10 = 30”.
 5 * 1 = 5
@@ -189,7 +189,7 @@ for i in range(1,11):
     
     
     
- #What is the total sum?
+ 15 #What is the total sum?
 Write a program to find the sum of all natural numbers between X and Y inclusive.
 
 
@@ -203,7 +203,7 @@ print(sum)
 
 
 
-#Sum of even numbers.
+16 #Sum of even numbers.
 Write a program to find the sum of all even numbers between X and Y inclusive.
 
 
@@ -217,7 +217,7 @@ print(s)
         
         
 
-#How many odds?
+17 #How many odds?
 Write a program to print number of all odd numbers between X and Y inclusive.
 
 
@@ -233,7 +233,7 @@ print(c)
     
     
     
-#How many natural numbers?
+18 #How many natural numbers?
 Write a program to print number of all natural numbers between X and Y (both exclusive).
 
 x=int(input())
@@ -245,7 +245,7 @@ print(c)
 
 
 
-#Find factorial.
+19 #Find factorial.
 Given an integer X, find its factorial. (Factorial of 7 = 7! = 7 x 6 x 5 x 4 x 3 x 2 x 1)
 
 
@@ -257,7 +257,7 @@ print(fact)
 
 
 
-#Find exponent value.
+20 #Find exponent value.
 Given two integers X and Y, find the value of X raised to power Y. Ex: X = 2, Y = 4 will give 16.
 
 
@@ -270,7 +270,7 @@ print(exp)# print(x**y)
 
 
 
-#Right angled triangle.
+21 #Right angled triangle.
 Write a program to print the following triangle using for-loop.
 
 *
@@ -303,6 +303,236 @@ for i in range(1,6):
 
 
 
+22 #REVERSING NUM
+num=1453
+while num!=0:
+   digit=num%10
+   num=num//10
+   print(digit,end="")
+   
+   
+   or 
+   
+   
+num=1234
+result=0
+while num!=0:
+    digit=num%10
+    num=num//10
+    result*=10
+    result+=digit
+print(result)
+    
+23 #Sum of odd & even digits.
+Take X as input. Print the sum of its odd placed digits and sum of its even placed digits.
+
+
+n=input()
+s=list(n)
+e=0
+O=0
+for i in range(len(s)):
+    if i%2==0:
+        e+=int(s[i])
+    else:
+        O+=int(s[i])
+print(e)
+print(O)
+
+
+
+24 # FIBONACCI NUMBER
+n=23
+a=0
+b=1
+c=a+b
+while c<n:
+    print(c)
+    a=b
+    b=c
+    c=a+b
+    
+25 print the fibonacci number at a given index number . nth fibonacci number
+
+i=8 #index
+a=0
+b=1
+for x in range(i-1):
+   c=a+b
+   a=b
+   b=c
+print(c)
+    
+
+
+
+########  FUNCTIONS ####
+
+def(x): 
+  y=2*x
+  print(y)
+def(5)
+
+
+def hello():
+    print("HEllo")
+    print("Hrllo"*count)
+hello()
+
+
+def hello(count):
+    print("Hrllo"*count)
+hello(3)
+
+def hello(name):
+    print("Hrllo"+ name)
+hello("grace vani")
+
+
+
+26 ##What's the temperature?
+Write a function that takes as input a Fahrenheit value and returns the corresponding Celsius value.
+Use the formula C = (5/9)(F – 32). Make sure you are not doing "integer division".
+
+
+
+def tem(f):
+    c=5/9 * (f-32)
+    return int(c)
+
+f=int(input())
+print(tem(f))
+
+
+
+27 ###Is character uppercase?
+Take as input a character Ch (eg: ‘g’, ‘h’, ‘A’, ‘5’, ‘+’).
+Write a function that returns Yes if the character is uppercase and No otherwise.
+Print the value returned.
+
+
+n=input()
+a=n.isupper()
+if a==True:
+    print("Yes")
+else:
+    print("No")
+
+
+
+28 Count digits.
+Take as input the following:
+a. A number (eg: 31416) - X
+b. A digit (eg: 1) - D
+Write a function that returns the number of times the digit (D) is found in the number (X).
+Eg: 1 is found 2 times in 31416. Print the value returned.
+
+Hint: To get last digit of 1234, you can get its remainder when divided by 10... (1234 % 10 = 4).
+Now divide 1234 by 10 to get 123 (integer division).
+
+
+def count(n,d):
+    l=list(n)
+    c=0
+    for i in l:
+        if i==d:
+            c+=1
+    return c
+n=input()
+d=input()
+print(count(n,d))
+
+
+
+29 Fahr Celsius table.
+Write a function that takes as input 3 values:
+
+a. Start - This represents the starting Fahrenheit value
+b. End - This represents the ending Fahrenheit value
+c. Step - This represents the increment you need to make after each value
+
+Now run a loop from Start to End, increasing the value by Step each time.
+Each value in the loop represents a Fahrenheit value that you have to convert into Celsius.
+You can use the function you had created in 'What's the temperature?' question to do the conversion from F to C.
+Print as output the following table, with Fahrenheit values in left column and Celsius values in the right column.
+E.g.: For an input of 0 (Start), 100 (End) and 20 (Step) the output is:
+
+0 : -17
+20 : -6
+40 : 4
+60 : 15
+80 : 26
+100 : 37
+
+
+s=int(input())
+e=int(input())
+step=int(input())
+while s<=e:
+    c=5/9 *(s-32)
+    print(s , ":", int(c))
+    s+=step
+
+
+
+
+30 ##power of a number
+
+n1=int(input())
+n2=int(input())
+print(n1**n2)
+
+31 ###Is it a Prime number?
+Take as input a number N. Write a function that returns Yes if N is prime, and No otherwise.
+
+n=int(input())
+flag=True
+for i in range(2,int(n**0.5 )+ 1):
+    if n%i==0:
+        flag=False
+        break
+if flag==True:
+    print("Yes")
+else:
+    print("No")
+
+
+
+32 ###How many prime numbers?
+Write a program to print number of all Prime numbers between X and Y inclusive.
+
+def isprime(num):
+    for i in range(2,int(num**0.5)+1):
+        if num%i==0:
+            return False
+    return True
+
+s=int(input())
+e=int(input())
+count=0
+for i in range(s+1,e):
+    if isprime(i):
+        count+=1
+print(count)
+
+
+
+
+
+33 ####Print prime numbers.
+Take X as input. Print all prime numbers from 2 to X (inclusive).
+
+
+def isprime(num):
+    for i in range(2,int(num**0.5)+1):
+        if num%i==0:
+            return False
+    return True
+
+n=int(input())
+for i in range(2,n+1):
+    if isprime(i):
+        print(i)
 
 
 
